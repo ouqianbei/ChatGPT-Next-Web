@@ -26,6 +26,7 @@ export const useAccessStore = create<AccessControlStore>()(
       token: "",
       accessCode: "",
       needCode: true,
+      // needCode: false,
       hideUserApiKey: false,
       openaiUrl: "/api/openai/",
 
