@@ -21,7 +21,7 @@ export const DEFAULT_CONFIG = {
   // avatar: "1f9f8",
   avatar: "1f37b",
   fontSize: 14,
-  theme: Theme.Auto as Theme,
+  theme: Theme.Dark as Theme,
   tightBorder: false,
   sendPreviewBubble: false,
   sidebarWidth: 300,
