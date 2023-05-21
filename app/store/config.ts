@@ -74,7 +74,7 @@ export const ALL_MODELS = [
     available: ENABLE_GPT4,
   },
   {
-    name: "ext-davinci-002-render-sha-mobile",
+    name: "text-davinci-002-render-sha-mobile",
     available: true,
   },
   {
@@ -107,13 +107,13 @@ export const ALL_MODELS = [
   },
 ] as const;
 
-export type ModelType = typeof ALL_MODELS[number]["name"];
+export type ModelType = (typeof ALL_MODELS)[number]["name"];
 
 export function limitNumber(
   x: number,
   min: number,
   max: number,
-  defaultValue: number
+  defaultValue: number,
 ) {
   if (typeof x !== "number" || isNaN(x)) {
     return defaultValue;
@@ -172,6 +172,6 @@ export const useAppConfig = create<ChatConfigStore>()(
 
         return state;
       },
-    }
-  )
+    },
+  ),
 );
