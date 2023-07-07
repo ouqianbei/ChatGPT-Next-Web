@@ -345,7 +345,8 @@ function ExportAvatar(props: { avatar: string }) {
   if (props.avatar === DEFAULT_MASK_AVATAR) {
     return (
       <NextImage
-        src={BotIcon.src}
+        // src={BotIcon.src}
+        src="https://cdn.staticfile.org/emoji-datasource-apple/14.0.0/img/apple/64/1f916.png"
         width={30}
         height={30}
         alt="bot"
