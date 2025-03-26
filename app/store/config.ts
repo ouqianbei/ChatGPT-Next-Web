@@ -80,6 +80,14 @@ export const ALL_MODELS = [
     name: "gpt-3.5-turbo-16k",
     available: true,
   },
+  {
+    name: "deepseek-chat", // deepseek-chat
+    available: true,
+  },
+  {
+    name: "deepseek-reasoner", // deepseek-reasoner
+    available: true,
+  },
   // {
   //   name: "qwen-v1", // 通义千问
   //   available: false,
